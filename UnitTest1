@@ -1,0 +1,17 @@
+        [Test]
+        public void Division_Input1point0and3point0_Returns0point33‬()
+        {
+            // Arrange
+            double number1 = 1;
+            double number2 = 3;
+            double expectedResult = number1 / number2;
+            Mutant testCalc = new Mutant(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Reference - https://social.msdn.microsoft.com/Forums/en-US/4805de54-d2fe-4fa4-b87b-3862452da6c4/unit-test-double-values-in-c?forum=csharpgeneral
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult, 0.1);
+
+        }
