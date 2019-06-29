@@ -1,0 +1,15 @@
+        [Test]
+        public void Division_Input2point0and1point0_Returns2point0()
+        {
+            // Arrange
+            double number1 = 2;
+            double number2 = 1;
+            double expectedResult = number1 / number2;
+            Mutant testCalc = new Mutant(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
